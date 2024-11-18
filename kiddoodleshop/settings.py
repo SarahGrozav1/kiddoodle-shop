@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'allauth',
     'allauth.account',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -60,7 +61,9 @@ ROOT_URLCONF = 'kiddoodleshop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'templates', 'allauth'),
+                ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
