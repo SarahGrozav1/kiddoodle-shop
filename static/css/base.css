@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Vinyl&display=swap');@import url('https://fonts.googleapis.com/css2?family=Forum&family=Quicksand:wght@300..700&family=Rubik+Vinyl&display=swap');
+
+.navbar {
+    background-color: #E8E8E8; /* Culoare deschisă */
+    padding: 10px 20px;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .navbar-toggler-icon {
+    border: none;
+  }
+
+  .offcanvas {
+    background-color: #E8E8E8;
+    border-radius: 0 250px 250px 0; /* Rotunjit pe partea dreaptă */
+    max-width: 100%; /* Asigură scalarea corectă pe ecrane mici */
+}
+
+  .navbar-nav .nav-link {
+    color: #000000; 
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #2b6aa6; 
+  }
+
+.dropdown-menu {
+  border: none;
+  border-radius: 30px;
+  background-color: #E8E8E8;
+  box-shadow: 
+    -5px -5px 10px #ffffff, /* Umbra deschisă (sus-stânga) */
+    5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra închisă (jos-dreapta) */
+}
+
+.dropdown-item {
+  margin-left: 5px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+color: #abad9f;
+  background-color: #E8E8E8;
+  width: fit-content;
+}
+
+/* Search bar */
+.search {
+  padding: 10px 30px; /* Dimensiune buton */
+  font-size: 14px; /* Dimensiune text */
+  font-weight: bold;
+  color: #2b6aa6; /* Culoare text */
+  background-color: #E8E8E8; /* Fundalul butonului */
+  border: none; /* Fără margini */
+  border-radius: 50px; /* Colțuri rotunde */
+  box-shadow: 
+  inset -5px -5px 10px #ffffff, /* Umbra interioară deschisă (sus-stânga) */
+  inset 5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra interioară închisă (jos-dreapta) */
+  cursor: pointer;
+}
+
+.btn-search {
+  border-radius: 50px; /* Colțuri rotunde */
+  box-shadow: 
+    -5px -5px 10px #ffffff, /* Umbra deschisă (sus-stânga) */
+    5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra închisă (jos-dreapta) */
+  cursor: pointer;
+  background-color:#E8E8E8;
+  color: #2b6aa6;
+}
+
+/* Efect hover - umbră interioară */
+.btn-search:hover {
+  box-shadow: 
+    inset -5px -5px 10px #ffffff, /* Umbra interioară deschisă (sus-stânga) */
+    inset 5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra interioară închisă (jos-dreapta) */
+}
+
+.social-media-links {
+  color: #000000 !important;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  font-size: 25px;
+  text-decoration: none; /* Elimină sublinierea */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link {
+  color: #848872;
+}
+
+.social-link:hover {
+  color: #C3C6B5; /* Schimbă culoarea la hover */
+  transform: scale(1.2); /* Mărește iconița la hover */
+}
+
+  /* Logo */
+  .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Rubik Vinyl", system-ui;
+  }
+  
+  .k { color: #B7C6CD; }
+  .i { color: #ECBCA6; }
+  .d1 { color: #DCAE6C; }
+  .d2 { color: #B7C6CD; }
+  .o1 { color: #B5A196; }
+  .o2 { color: #DCAE6C; }
+  .d3 { color: #B7C6CD; }
+  .l { color: #ECBCA6; }
+  .e { color: #B5A196; }
+
