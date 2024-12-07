@@ -1,29 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik+Vinyl&display=swap');@import url('https://fonts.googleapis.com/css2?family=Forum&family=Quicksand:wght@300..700&family=Rubik+Vinyl&display=swap');
 
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#b5a196e8, #b5a19600),
+              url('/static/images/home-page.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: calc(100vh - 164px);
+  color: #555;
+}
+
 .navbar {
-    background-color: #E8E8E8; /* Culoare deschisă */
+    background-color: #3333333f;
     padding: 10px 20px;
     font-family: "Quicksand", sans-serif;
   }
 
-  .navbar-toggler-icon {
+.navbar-toggler-icon {
     border: none;
   }
 
-  .offcanvas {
-    background-color: #E8E8E8;
+.offcanvas {
+    background-color: #d4d4d4;
     border-radius: 0 250px 250px 0; /* Rotunjit pe partea dreaptă */
     max-width: 100%; /* Asigură scalarea corectă pe ecrane mici */
 }
 
-  .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     color: #000000; 
     font-weight: 500;
     font-size: 1.5rem;
     margin-right: 15px;
   }
 
-  .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: #2b6aa6; 
   }
 
@@ -66,7 +78,7 @@ color: #abad9f;
 .btn-search {
   border-radius: 50px; /* Colțuri rotunde */
   box-shadow: 
-    -5px -5px 10px #ffffff, /* Umbra deschisă (sus-stânga) */
+    -3px -3px 10px #ffffff, /* Umbra deschisă (sus-stânga) */
     5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra închisă (jos-dreapta) */
   cursor: pointer;
   background-color:#E8E8E8;
@@ -77,11 +89,10 @@ color: #abad9f;
 .btn-search:hover {
   box-shadow: 
     inset -5px -5px 10px #ffffff, /* Umbra interioară deschisă (sus-stânga) */
-    inset 5px 5px 10px rgba(0, 0, 0, 0.2); /* Umbra interioară închisă (jos-dreapta) */
+    inset 3px 3px 7px rgba(0, 0, 0, 0.2); /* Umbra interioară închisă (jos-dreapta) */
 }
 
 .social-media-links {
-  color: #000000 !important;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -111,9 +122,39 @@ color: #abad9f;
   .i { color: #ECBCA6; }
   .d1 { color: #DCAE6C; }
   .d2 { color: #B7C6CD; }
-  .o1 { color: #B5A196; }
+  .o1 { color: #cfb1a1; }
   .o2 { color: #DCAE6C; }
   .d3 { color: #B7C6CD; }
   .l { color: #ECBCA6; }
-  .e { color: #B5A196; }
+  .e { color: #cfb1a1; }
 
+.icons {
+  color: #B7C6CD;
+}
+
+.icons:hover {
+  color: #ffffff;
+}
+
+.shop-now-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Contur transparent */
+  border-radius: 25px; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.shop-now-button:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Fundal mai puțin transparent */
+  color: #a0681a; /* Schimbă culoarea textului */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* Umbra devine mai intensă */
+  transform: translateY(-2px); /* Mică ridicare */
+}
